@@ -67,5 +67,7 @@
         <file>img/username/required.png</file>
         <file>img/username/update.png</file>
         <file>img/username/username.png</file>
+        <file>img/Ai message/required.png</file>
+        <file>img/DRAW PAGE/REQUIRED.png</file>
     </qresource>
 </RCC>

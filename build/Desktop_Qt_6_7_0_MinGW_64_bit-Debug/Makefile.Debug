@@ -150,6 +150,7 @@ debug/qrc_resource.cpp: ../../resource.qrc \
 		../../img/New\ User/confirm-pass.png \
 		../../img/New\ User/username.png \
 		../../img/New\ User/signup.png \
+		../../img/Ai\ message/required.png \
 		../../img/Game\ itsself/required.png \
 		../../img/Game\ itsself/Borders.png \
 		../../img/Game\ itsself/x-vector.png \
@@ -183,6 +184,7 @@ debug/qrc_resource.cpp: ../../resource.qrc \
 		../../img/Login/Username.png \
 		../../img/Login/white-rect.png \
 		../../img/Login/Show.png \
+		../../img/DRAW\ PAGE/REQUIRED.png \
 		../../img/username/update.png \
 		../../img/username/new-username.png \
 		../../img/username/password(confirmation).png \
@@ -1355,16 +1357,11 @@ debug/AccountSettings.o: ../../AccountSettings.cpp ../../mainwindow.h \
 		ui_mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGroupBox \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgroupbox.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLCDNumber \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlcdnumber.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
@@ -1746,16 +1743,11 @@ debug/AiPlayer.o: ../../AiPlayer.cpp ../../mainwindow.h \
 		ui_mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGroupBox \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgroupbox.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLCDNumber \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlcdnumber.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
@@ -2137,16 +2129,11 @@ debug/DetailedGameHistory.o: ../../DetailedGameHistory.cpp ../../mainwindow.h \
 		ui_mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGroupBox \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgroupbox.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLCDNumber \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlcdnumber.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
@@ -2528,16 +2515,11 @@ debug/GameHistory.o: ../../GameHistory.cpp ../../mainwindow.h \
 		ui_mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGroupBox \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgroupbox.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLCDNumber \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlcdnumber.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
@@ -2919,16 +2901,11 @@ debug/LoginWindow.o: ../../LoginWindow.cpp ../../mainwindow.h \
 		ui_mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGroupBox \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgroupbox.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLCDNumber \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlcdnumber.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
@@ -3310,16 +3287,11 @@ debug/MainMenu.o: ../../MainMenu.cpp ../../mainwindow.h \
 		ui_mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGroupBox \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgroupbox.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLCDNumber \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlcdnumber.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
@@ -3697,16 +3669,11 @@ debug/PlayMode.o: ../../PlayMode.cpp ../../mainwindow.h \
 		ui_mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGroupBox \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgroupbox.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLCDNumber \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlcdnumber.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
@@ -4084,16 +4051,11 @@ debug/SignUp.o: ../../SignUp.cpp ../../mainwindow.h \
 		ui_mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGroupBox \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgroupbox.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLCDNumber \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlcdnumber.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
@@ -4475,16 +4437,11 @@ debug/TwoPlayer.o: ../../TwoPlayer.cpp ../../mainwindow.h \
 		ui_mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGroupBox \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgroupbox.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLCDNumber \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlcdnumber.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
@@ -4866,16 +4823,11 @@ debug/UpdatePassword.o: ../../UpdatePassword.cpp ../../mainwindow.h \
 		ui_mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGroupBox \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgroupbox.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLCDNumber \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlcdnumber.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
@@ -5257,16 +5209,11 @@ debug/UpdateUsername.o: ../../UpdateUsername.cpp ../../mainwindow.h \
 		ui_mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGroupBox \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgroupbox.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLCDNumber \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlcdnumber.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
@@ -5648,16 +5595,11 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		ui_mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QGroupBox \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgroupbox.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLCDNumber \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlcdnumber.h \
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
@@ -5677,7 +5619,6 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qdialog.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
-		C:/Qt/6.7.0/mingw_64/include/QtGui/QPixmap \
 		../../PageNumbers.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug/mainwindow.o ../../mainwindow.cpp
 
