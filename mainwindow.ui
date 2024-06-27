@@ -36,11 +36,7 @@
        <string notr="true">image: url(:/rec/img/Login/Background.png);</string>
       </property>
       <property name="currentIndex">
-<<<<<<< HEAD
        <number>0</number>
-=======
-       <number>7</number>
->>>>>>> b22b240360c950645de012f1bd0ffa7e16c03a56
       </property>
       <widget class="QWidget" name="P1_Login">
        <property name="sizePolicy">

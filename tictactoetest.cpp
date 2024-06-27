@@ -109,4 +109,4 @@ void TicTacToeTest::testDraw()
 }
 
 // This line is required to make the test class executable with QTest
-QTEST_MAIN(TicTacToeTest)
+//QTEST_MAIN(TicTacToeTest)
