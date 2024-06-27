@@ -70,8 +70,6 @@ MainWindow::MainWindow(QWidget *parent)
     CurrentPassword = "";
 
     ui->stackedWidget->setCurrentIndex(LoginPage);
-
-    //ui->P1_Login->setStyleSheet("background-image: url(':/rec/img/firstwindow.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;");
 }
 
 MainWindow::~MainWindow()
@@ -139,30 +137,6 @@ void MainWindow::UpdateStatus()
     QueryUpdateData.bindValue(":Username",CurrentUsername);
     QueryUpdateData.bindValue(":Password",CurrentPassword);
     QueryUpdateData.exec();
-
-    QSqlDatabase::database().commit();
-    DB_Connection.close();
-}
-
-void MainWindow::checkresult(int gameid)
-{
-    DB_Connection.open();
-    QSqlDatabase::database().transaction();
-
-    QSqlQuery QueryLoadData(DB_Connection);
-    QueryLoadData.prepare("SELECT Status FROM user_" + CurrentUsername + " WHERE game_id = :gameid AND move_number = (SELECT MAX(move_number) FROM user_" + CurrentUsername + " WHERE game_id = :gameid)");
-    QueryLoadData.bindValue(":gameid",gameid);
-    if(QueryLoadData.exec())
-    {
-        if(QueryLoadData.next())
-        {
-            qDebug() << "This game was a " + QString(QueryLoadData.value(0).toString());
-        }
-        else
-        {
-            qDebug() << "game id not found";
-        }
-    }
 
     QSqlDatabase::database().commit();
     DB_Connection.close();

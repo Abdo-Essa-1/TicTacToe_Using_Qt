@@ -36,7 +36,7 @@
        <string notr="true">image: url(:/rec/img/Login/Background.png);</string>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="P1_Login">
        <property name="sizePolicy">
@@ -46,7 +46,7 @@
         </sizepolicy>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-image: url(:/rec/img/Background.png);</string>
+        <string notr="true"/>
        </property>
        <widget class="QLabel" name="Welcome">
         <property name="geometry">
@@ -1959,7 +1959,7 @@ border: none;
 </string>
         </property>
         <property name="echoMode">
-         <enum>QLineEdit::Password</enum>
+         <enum>QLineEdit::Normal</enum>
         </property>
        </widget>
        <widget class="QLineEdit" name="UpdateUser_PassText">
@@ -2719,8 +2719,8 @@ image: url(:/rec/img/Game itsself/Back.png);</string>
          <item>
           <widget class="QLabel" name="GameNumber">
            <property name="styleSheet">
-            <string notr="true">font: 700 18pt &quot;Segoe UI&quot;;
-color: rgb(0, 170, 0);
+            <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Doctor Glitch&quot;;
 image: url(:/rec/img/Game itsself/transparent.png);</string>
            </property>
            <property name="text">
@@ -2731,8 +2731,8 @@ image: url(:/rec/img/Game itsself/transparent.png);</string>
          <item>
           <widget class="QLabel" name="GameStatus">
            <property name="styleSheet">
-            <string notr="true">font: 700 18pt &quot;Segoe UI&quot;;
-color: rgb(0, 170, 0);
+            <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Doctor Glitch&quot;;
 image: url(:/rec/img/Game itsself/transparent.png);</string>
            </property>
            <property name="text">
@@ -2743,8 +2743,8 @@ image: url(:/rec/img/Game itsself/transparent.png);</string>
          <item>
           <widget class="QLabel" name="GameOpponent">
            <property name="styleSheet">
-            <string notr="true">font: 700 18pt &quot;Segoe UI&quot;;
-color: rgb(0, 170, 0);
+            <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Doctor Glitch&quot;;
 image: url(:/rec/img/Game itsself/transparent.png);</string>
            </property>
            <property name="text">

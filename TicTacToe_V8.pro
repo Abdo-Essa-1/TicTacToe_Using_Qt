@@ -32,6 +32,31 @@ HEADERS += \
 FORMS += \
     mainwindow.ui
 
+# TEMPLATE = subdirs
+
+# SUBDIRS += main tests
+
+# main.path = main
+# tests.path = tests
+
+# # Define the order of build
+# tests.depends = src
+
+# # Add a separate executable for the tests
+# TEMPLATE = app
+
+# # Target for the application
+# TARGET = TicTacToe_V8
+
+# # Target for the test executable
+# QMAKE_EXTRA_TARGETS += tests
+
+# tests.target = tictactoetest
+# tests.commands = $$QMAKE $(MAKE) -f Makefile check
+
+# DISTFILES += \
+#     .github/workflows/main.yml
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin

@@ -113,8 +113,6 @@ private slots:
 
     void UpdateStatus();
 
-    void checkresult(int gameid);
-
     void on_DetailedHistory_clicked();
 
     void on_HistoryBack_clicked();
@@ -132,6 +130,11 @@ private slots:
     void on_PreviousMove_clicked();
 
     void on_NextMove_clicked();
+
+    QString hashPassword(const QString &password);
+
+    void renameTable(const QString &oldName, const QString &newName);
+
 
 private:
     Ui::MainWindow *ui;

@@ -107,6 +107,3 @@ void TicTacToeTest::testDraw()
     delete app;
     app = nullptr;
 }
-
-// This line is required to make the test class executable with QTest
-//QTEST_MAIN(TicTacToeTest)

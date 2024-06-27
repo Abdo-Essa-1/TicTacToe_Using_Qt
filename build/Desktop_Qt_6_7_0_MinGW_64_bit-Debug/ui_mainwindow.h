@@ -200,7 +200,7 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(P1_Login->sizePolicy().hasHeightForWidth());
         P1_Login->setSizePolicy(sizePolicy);
-        P1_Login->setStyleSheet(QString::fromUtf8("background-image: url(:/rec/img/Background.png);"));
+        P1_Login->setStyleSheet(QString::fromUtf8(""));
         Welcome = new QLabel(P1_Login);
         Welcome->setObjectName("Welcome");
         Welcome->setGeometry(QRect(240, 120, 551, 131));
@@ -864,7 +864,7 @@ public:
 "\n"
 "\n"
 ""));
-        UpdateUser_Text->setEchoMode(QLineEdit::Password);
+        UpdateUser_Text->setEchoMode(QLineEdit::Normal);
         UpdateUser_PassText = new QLineEdit(P8_UpdateUsername);
         UpdateUser_PassText->setObjectName("UpdateUser_PassText");
         UpdateUser_PassText->setGeometry(QRect(230, 390, 701, 40));
@@ -1110,24 +1110,24 @@ public:
         horizontalLayout_18->setContentsMargins(0, 0, 0, 0);
         GameNumber = new QLabel(layoutWidget);
         GameNumber->setObjectName("GameNumber");
-        GameNumber->setStyleSheet(QString::fromUtf8("font: 700 18pt \"Segoe UI\";\n"
-"color: rgb(0, 170, 0);\n"
+        GameNumber->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 12pt \"Doctor Glitch\";\n"
 "image: url(:/rec/img/Game itsself/transparent.png);"));
 
         horizontalLayout_18->addWidget(GameNumber);
 
         GameStatus = new QLabel(layoutWidget);
         GameStatus->setObjectName("GameStatus");
-        GameStatus->setStyleSheet(QString::fromUtf8("font: 700 18pt \"Segoe UI\";\n"
-"color: rgb(0, 170, 0);\n"
+        GameStatus->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 12pt \"Doctor Glitch\";\n"
 "image: url(:/rec/img/Game itsself/transparent.png);"));
 
         horizontalLayout_18->addWidget(GameStatus);
 
         GameOpponent = new QLabel(layoutWidget);
         GameOpponent->setObjectName("GameOpponent");
-        GameOpponent->setStyleSheet(QString::fromUtf8("font: 700 18pt \"Segoe UI\";\n"
-"color: rgb(0, 170, 0);\n"
+        GameOpponent->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 12pt \"Doctor Glitch\";\n"
 "image: url(:/rec/img/Game itsself/transparent.png);"));
 
         horizontalLayout_18->addWidget(GameOpponent);
@@ -1259,7 +1259,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(9);
+        stackedWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

@@ -9,6 +9,8 @@ void MainWindow::on_ConfirmPassUpdate_clicked()
     QString NewPass = ui->UpdatePass_NewPass->text();
     QString ConfirmNewPass = ui->UpdatePass_ConfirmPass->text();
 
+    OldPass = hashPassword(OldPass);
+
     if(OldPass != CurrentPassword)
     {
         QMessageBox::warning(this, "Wrong Password", "Password is Wrong, Try again");
@@ -27,20 +29,21 @@ void MainWindow::on_ConfirmPassUpdate_clicked()
         return;
     }
 
+    NewPass = hashPassword(NewPass);
+
     DB_Connection.open();
     QSqlDatabase::database().transaction();
 
     QSqlQuery QueryUpdateData(DB_Connection);
-    QueryUpdateData.prepare("UPDATE PlayersData SET Passwords = :newPassword WHERE Usernames = :Usernames AND Passwords = :oldPassword");
+    QueryUpdateData.prepare("UPDATE PlayersData SET Passwords = :newPassword WHERE Usernames = :Usernames");
     QueryUpdateData.bindValue(":newPassword",NewPass);
     QueryUpdateData.bindValue(":Usernames",CurrentUsername);
-    QueryUpdateData.bindValue(":oldPassword",CurrentPassword);
     QueryUpdateData.exec();
 
     QSqlDatabase::database().commit();
     DB_Connection.close();
 
-    QMessageBox::information(this, "Update Username", "Username Updated Successfully!");
+    QMessageBox::information(this, "Update Password", "Password Updated Successfully!");
     CurrentPassword = NewPass;
     ui->stackedWidget->setCurrentIndex(ManageAccountPage);
 }

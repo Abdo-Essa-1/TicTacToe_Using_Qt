@@ -91,8 +91,6 @@ constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::string
     "SetResult",
     "Status",
     "UpdateStatus",
-    "checkresult",
-    "gameid",
     "on_DetailedHistory_clicked",
     "on_HistoryBack_clicked",
     "on_GameHistory_clicked",
@@ -101,7 +99,12 @@ constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::string
     "on_PreviousGame_clicked",
     "on_NextGame_clicked",
     "on_PreviousMove_clicked",
-    "on_NextMove_clicked"
+    "on_NextMove_clicked",
+    "hashPassword",
+    "password",
+    "renameTable",
+    "oldName",
+    "newName"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -114,7 +117,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-      54,   14, // methods
+      55,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -122,60 +125,61 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,  338,    2, 0x08,    1 /* Private */,
-       3,    0,  339,    2, 0x08,    2 /* Private */,
-       4,    0,  340,    2, 0x08,    3 /* Private */,
-       5,    0,  341,    2, 0x08,    4 /* Private */,
-       6,    0,  342,    2, 0x08,    5 /* Private */,
-       7,    0,  343,    2, 0x08,    6 /* Private */,
-       8,    0,  344,    2, 0x08,    7 /* Private */,
-       9,    0,  345,    2, 0x08,    8 /* Private */,
-      10,    0,  346,    2, 0x08,    9 /* Private */,
-      11,    0,  347,    2, 0x08,   10 /* Private */,
-      12,    0,  348,    2, 0x08,   11 /* Private */,
-      13,    0,  349,    2, 0x08,   12 /* Private */,
-      14,    0,  350,    2, 0x08,   13 /* Private */,
-      15,    0,  351,    2, 0x08,   14 /* Private */,
-      16,    0,  352,    2, 0x08,   15 /* Private */,
-      17,    0,  353,    2, 0x08,   16 /* Private */,
-      18,    0,  354,    2, 0x08,   17 /* Private */,
-      19,    0,  355,    2, 0x08,   18 /* Private */,
-      20,    0,  356,    2, 0x08,   19 /* Private */,
-      21,    0,  357,    2, 0x08,   20 /* Private */,
-      22,    0,  358,    2, 0x08,   21 /* Private */,
-      23,    0,  359,    2, 0x08,   22 /* Private */,
-      24,    0,  360,    2, 0x08,   23 /* Private */,
-      25,    0,  361,    2, 0x08,   24 /* Private */,
-      26,    0,  362,    2, 0x08,   25 /* Private */,
-      27,    0,  363,    2, 0x08,   26 /* Private */,
-      28,    0,  364,    2, 0x08,   27 /* Private */,
-      29,    0,  365,    2, 0x08,   28 /* Private */,
-      30,    0,  366,    2, 0x08,   29 /* Private */,
-      31,    0,  367,    2, 0x08,   30 /* Private */,
-      32,    0,  368,    2, 0x08,   31 /* Private */,
-      33,    0,  369,    2, 0x08,   32 /* Private */,
-      34,    0,  370,    2, 0x08,   33 /* Private */,
-      35,    1,  371,    2, 0x08,   34 /* Private */,
-      37,    1,  374,    2, 0x08,   36 /* Private */,
-      38,    0,  377,    2, 0x08,   38 /* Private */,
-      39,    5,  378,    2, 0x08,   39 /* Private */,
-      45,    3,  389,    2, 0x08,   45 /* Private */,
-      49,    0,  396,    2, 0x08,   49 /* Private */,
-      50,    0,  397,    2, 0x08,   50 /* Private */,
-      51,    1,  398,    2, 0x08,   51 /* Private */,
-      52,    0,  401,    2, 0x08,   53 /* Private */,
-      53,    1,  402,    2, 0x08,   54 /* Private */,
-      55,    0,  405,    2, 0x08,   56 /* Private */,
-      56,    1,  406,    2, 0x08,   57 /* Private */,
-      58,    0,  409,    2, 0x08,   59 /* Private */,
-      59,    0,  410,    2, 0x08,   60 /* Private */,
-      60,    0,  411,    2, 0x08,   61 /* Private */,
-      61,    0,  412,    2, 0x08,   62 /* Private */,
-      62,    0,  413,    2, 0x08,   63 /* Private */,
-      63,    0,  414,    2, 0x08,   64 /* Private */,
-      64,    0,  415,    2, 0x08,   65 /* Private */,
-      65,    0,  416,    2, 0x08,   66 /* Private */,
-      66,    0,  417,    2, 0x08,   67 /* Private */,
+       1,    0,  344,    2, 0x08,    1 /* Private */,
+       3,    0,  345,    2, 0x08,    2 /* Private */,
+       4,    0,  346,    2, 0x08,    3 /* Private */,
+       5,    0,  347,    2, 0x08,    4 /* Private */,
+       6,    0,  348,    2, 0x08,    5 /* Private */,
+       7,    0,  349,    2, 0x08,    6 /* Private */,
+       8,    0,  350,    2, 0x08,    7 /* Private */,
+       9,    0,  351,    2, 0x08,    8 /* Private */,
+      10,    0,  352,    2, 0x08,    9 /* Private */,
+      11,    0,  353,    2, 0x08,   10 /* Private */,
+      12,    0,  354,    2, 0x08,   11 /* Private */,
+      13,    0,  355,    2, 0x08,   12 /* Private */,
+      14,    0,  356,    2, 0x08,   13 /* Private */,
+      15,    0,  357,    2, 0x08,   14 /* Private */,
+      16,    0,  358,    2, 0x08,   15 /* Private */,
+      17,    0,  359,    2, 0x08,   16 /* Private */,
+      18,    0,  360,    2, 0x08,   17 /* Private */,
+      19,    0,  361,    2, 0x08,   18 /* Private */,
+      20,    0,  362,    2, 0x08,   19 /* Private */,
+      21,    0,  363,    2, 0x08,   20 /* Private */,
+      22,    0,  364,    2, 0x08,   21 /* Private */,
+      23,    0,  365,    2, 0x08,   22 /* Private */,
+      24,    0,  366,    2, 0x08,   23 /* Private */,
+      25,    0,  367,    2, 0x08,   24 /* Private */,
+      26,    0,  368,    2, 0x08,   25 /* Private */,
+      27,    0,  369,    2, 0x08,   26 /* Private */,
+      28,    0,  370,    2, 0x08,   27 /* Private */,
+      29,    0,  371,    2, 0x08,   28 /* Private */,
+      30,    0,  372,    2, 0x08,   29 /* Private */,
+      31,    0,  373,    2, 0x08,   30 /* Private */,
+      32,    0,  374,    2, 0x08,   31 /* Private */,
+      33,    0,  375,    2, 0x08,   32 /* Private */,
+      34,    0,  376,    2, 0x08,   33 /* Private */,
+      35,    1,  377,    2, 0x08,   34 /* Private */,
+      37,    1,  380,    2, 0x08,   36 /* Private */,
+      38,    0,  383,    2, 0x08,   38 /* Private */,
+      39,    5,  384,    2, 0x08,   39 /* Private */,
+      45,    3,  395,    2, 0x08,   45 /* Private */,
+      49,    0,  402,    2, 0x08,   49 /* Private */,
+      50,    0,  403,    2, 0x08,   50 /* Private */,
+      51,    1,  404,    2, 0x08,   51 /* Private */,
+      52,    0,  407,    2, 0x08,   53 /* Private */,
+      53,    1,  408,    2, 0x08,   54 /* Private */,
+      55,    0,  411,    2, 0x08,   56 /* Private */,
+      56,    0,  412,    2, 0x08,   57 /* Private */,
+      57,    0,  413,    2, 0x08,   58 /* Private */,
+      58,    0,  414,    2, 0x08,   59 /* Private */,
+      59,    0,  415,    2, 0x08,   60 /* Private */,
+      60,    0,  416,    2, 0x08,   61 /* Private */,
+      61,    0,  417,    2, 0x08,   62 /* Private */,
+      62,    0,  418,    2, 0x08,   63 /* Private */,
+      63,    0,  419,    2, 0x08,   64 /* Private */,
+      64,    0,  420,    2, 0x08,   65 /* Private */,
+      65,    1,  421,    2, 0x08,   66 /* Private */,
+      67,    2,  424,    2, 0x08,   68 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -222,7 +226,6 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void, QMetaType::QString,   54,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,   57,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -232,6 +235,8 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::QString, QMetaType::QString,   66,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString,   68,   69,
 
        0        // eod
 };
@@ -345,9 +350,6 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         // method 'UpdateStatus'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'checkresult'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'on_DetailedHistory_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_HistoryBack_clicked'
@@ -365,7 +367,14 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'on_PreviousMove_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_NextMove_clicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'hashPassword'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        // method 'renameTable'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>
     >,
     nullptr
 } };
@@ -424,16 +433,18 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 41: _t->aiMove(); break;
         case 42: _t->SetResult((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 43: _t->UpdateStatus(); break;
-        case 44: _t->checkresult((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
-        case 45: _t->on_DetailedHistory_clicked(); break;
-        case 46: _t->on_HistoryBack_clicked(); break;
-        case 47: _t->on_GameHistory_clicked(); break;
-        case 48: _t->deleteRemaining(); break;
-        case 49: _t->on_Detailed_Back_clicked(); break;
-        case 50: _t->on_PreviousGame_clicked(); break;
-        case 51: _t->on_NextGame_clicked(); break;
-        case 52: _t->on_PreviousMove_clicked(); break;
-        case 53: _t->on_NextMove_clicked(); break;
+        case 44: _t->on_DetailedHistory_clicked(); break;
+        case 45: _t->on_HistoryBack_clicked(); break;
+        case 46: _t->on_GameHistory_clicked(); break;
+        case 47: _t->deleteRemaining(); break;
+        case 48: _t->on_Detailed_Back_clicked(); break;
+        case 49: _t->on_PreviousGame_clicked(); break;
+        case 50: _t->on_NextGame_clicked(); break;
+        case 51: _t->on_PreviousMove_clicked(); break;
+        case 52: _t->on_NextMove_clicked(); break;
+        case 53: { QString _r = _t->hashPassword((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 54: _t->renameTable((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
         default: ;
         }
     }
@@ -458,13 +469,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 54)
+        if (_id < 55)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 54;
+        _id -= 55;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 54)
+        if (_id < 55)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 54;
+        _id -= 55;
     }
     return _id;
 }

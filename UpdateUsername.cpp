@@ -7,6 +7,9 @@ void MainWindow::on_ConfirmUserUpdate_clicked()
 {
     QString NewUsername = ui->UpdateUser_Text->text();
     QString ConfirmPass = ui->UpdateUser_PassText->text();
+
+    ConfirmPass = hashPassword(ConfirmPass);
+
     if(ConfirmPass != CurrentPassword)
     {
         QMessageBox::warning(this, "Wrong Password", "Password is Wrong, Try again");
@@ -41,14 +44,15 @@ void MainWindow::on_ConfirmUserUpdate_clicked()
     QSqlDatabase::database().transaction();
 
     QSqlQuery QueryUpdateData(DB_Connection);
-    QueryUpdateData.prepare("UPDATE PlayersData SET Usernames = :newUsername WHERE Usernames = :oldUsername AND Passwords = :Passwords");
+    QueryUpdateData.prepare("UPDATE PlayersData SET Usernames = :newUsername WHERE Usernames = :oldUsername");
     QueryUpdateData.bindValue(":newUsername",NewUsername);
     QueryUpdateData.bindValue(":oldUsername",CurrentUsername);
-    QueryUpdateData.bindValue(":Passwords",CurrentPassword);
     QueryUpdateData.exec();
 
     QSqlDatabase::database().commit();
     DB_Connection.close();
+
+    renameTable(CurrentUsername, NewUsername);
 
     QMessageBox::information(this, "Update Username", "Username Updated Successfully!");
     CurrentUsername = NewUsername;
@@ -71,4 +75,20 @@ void MainWindow::on_UpdateUser_ShowPass_clicked()
     {
         ui->UpdateUser_PassText->setEchoMode(QLineEdit::Normal);
     }
+}
+
+void MainWindow::renameTable(const QString &oldName, const QString &newName)
+{
+    DB_Connection.open();
+    QSqlDatabase::database().transaction();
+
+    QSqlQuery query;
+    QString sql = QString("ALTER TABLE user_%1 RENAME TO user_%2").arg(oldName).arg(newName);
+    if (!query.exec(sql)) {
+        qDebug() << "Error renaming table:" << query.lastError().text();
+        return;
+    }
+
+    QSqlDatabase::database().commit();
+    DB_Connection.close();
 }
