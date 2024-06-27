@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "PageNumbers.h"
 #include <QMessageBox>
+#include <QCryptographicHash>
 
 void MainWindow::createUserTable(const QString &username)
 {
@@ -44,6 +45,9 @@ void MainWindow::on_pushButton_SignUp_clicked()
         QMessageBox::warning(this, "Invaild", "Password Not Matched");
         return;
     }
+
+    // Hashing the password
+    password = hashPassword(password);
 
     DB_Connection.open();
     QSqlDatabase::database().transaction();
@@ -112,4 +116,10 @@ void MainWindow::on_SignUp_ShowConfirmPass_clicked()
     {
         ui->SignUp_ConfirmPass->setEchoMode(QLineEdit::Normal);
     }
+}
+
+QString MainWindow::hashPassword(const QString &password)
+{
+    QByteArray hash = QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256);
+    return QString(hash.toHex());
 }

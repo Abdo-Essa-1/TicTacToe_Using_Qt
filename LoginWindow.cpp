@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "PageNumbers.h"
+#include <QCryptographicHash>
 #include <QMessageBox>
 
 int MainWindow::getLastGameId(const QString &username)
@@ -23,26 +24,28 @@ void MainWindow::on_pushButton_Login_clicked()
     QSqlDatabase::database().transaction();
 
     QSqlQuery QueryLoadData(DB_Connection);
-    QueryLoadData.prepare("SELECT * FROM PlayersData WHERE Usernames = :Usernames AND Passwords = :Passwords");
+    QueryLoadData.prepare("SELECT * FROM PlayersData WHERE Usernames = :Usernames");
     QueryLoadData.bindValue(":Usernames",username);
-    QueryLoadData.bindValue(":Passwords",password);
-    if(QueryLoadData.exec())
+    if(QueryLoadData.exec() && QueryLoadData.next())
     {
-        if(QueryLoadData.next())
-        {
-            QMessageBox::information(this, "Login", "Login Success!\nWelcome " + username + "!");
-            gameId = getLastGameId(username) + 1;
-            Wins = QueryLoadData.value("Wins").toInt();
-            Loses = QueryLoadData.value("Loses").toInt();
-            Draws = QueryLoadData.value("Draws").toInt();
-            CurrentUsername = username;
-            CurrentPassword = password;
-            ui->stackedWidget->setCurrentIndex(MainMenuPage);
+        QString storedHash = QueryLoadData.value("Passwords").toString();
+        QString inputHash = hashPassword(password);
+        if (storedHash != inputHash) {
+            QMessageBox::warning(this, "Login", "Password verification failed!\nPlease try again");
+            return;
         }
-        else
-        {
-            QMessageBox::warning(this, "Login", "Username and password is not correct!\nPlease try again");
-        }
+        QMessageBox::information(this, "Login", "Login Success!\nWelcome " + username + "!");
+        gameId = getLastGameId(username) + 1;
+        Wins = QueryLoadData.value("Wins").toInt();
+        Loses = QueryLoadData.value("Loses").toInt();
+        Draws = QueryLoadData.value("Draws").toInt();
+        CurrentUsername = username;
+        CurrentPassword = inputHash;
+        ui->stackedWidget->setCurrentIndex(MainMenuPage);
+    }
+    else
+    {
+        QMessageBox::warning(this, "Login", "Error retrieving user or user not found!\nPlease try again");
     }
 
     QSqlDatabase::database().commit();

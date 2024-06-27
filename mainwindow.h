@@ -131,6 +131,11 @@ private slots:
 
     void on_NextMove_clicked();
 
+    QString hashPassword(const QString &password);
+
+    void renameTable(const QString &oldName, const QString &newName);
+
+
 private:
     Ui::MainWindow *ui;
 

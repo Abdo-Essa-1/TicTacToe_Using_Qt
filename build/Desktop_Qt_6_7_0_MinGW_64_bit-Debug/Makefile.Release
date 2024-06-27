@@ -2922,6 +2922,7 @@ release/LoginWindow.o: ../../LoginWindow.cpp ../../mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QVBoxLayout \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget \
 		../../PageNumbers.h \
+		C:/Qt/6.7.0/mingw_64/include/QtCore/QCryptographicHash \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qdialog.h \
@@ -4075,7 +4076,8 @@ release/SignUp.o: ../../SignUp.cpp ../../mainwindow.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/QMessageBox \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qdialog.h \
-		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h
+		C:/Qt/6.7.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+		C:/Qt/6.7.0/mingw_64/include/QtCore/QCryptographicHash
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release/SignUp.o ../../SignUp.cpp
 
 release/TwoPlayer.o: ../../TwoPlayer.cpp ../../mainwindow.h \
