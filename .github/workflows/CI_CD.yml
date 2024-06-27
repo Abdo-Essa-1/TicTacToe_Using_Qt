@@ -32,7 +32,6 @@ jobs:
 
       - name: Configure build
         run: |
-          mkdir build
           cd build
           qmake ../TicTacToe_V8.pro
 
