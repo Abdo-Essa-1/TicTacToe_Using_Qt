@@ -10,6 +10,11 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+    SOURCE_DIR:   ${{ github.workspace }}
+    QT_VERSION:   6.6.0
+    ARTIFACT:     TicTacToe_V8
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -25,10 +30,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install dependencies
+      - name: Get all tags for correct version determination
+        working-directory:  ${{ github.workspace }}
         run: |
-          sudo apt-get update
-          sudo apt-get install -y qt5-default
+          git fetch --all --tags -f
+      - name: Install Qt
+        uses: jurplel/install-qt-action@v2
+        with:
+          version:      ${{ env.QT_VERSION }}
+          host:         windows
+          target:       desktop
+          arch:         win64_msvc2019_64
+          dir:          ${{ runner.temp }}
+          modules:      qtcharts qt3d
+          setup-python: false
 
       - name: Configure build
         run: |
