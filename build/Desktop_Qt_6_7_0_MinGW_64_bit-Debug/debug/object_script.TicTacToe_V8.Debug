@@ -1,0 +1,16 @@
+debug/AccountSettings.o
+debug/AiPlayer.o
+debug/DetailedGameHistory.o
+debug/GameHistory.o
+debug/LoginWindow.o
+debug/MainMenu.o
+debug/PlayMode.o
+debug/SignUp.o
+debug/TwoPlayer.o
+debug/UpdatePassword.o
+debug/UpdateUsername.o
+debug/mainwindow.o
+debug/tictactoetest.o
+debug/qrc_resource.o
+debug/moc_mainwindow.o
+debug/moc_tictactoetest.o

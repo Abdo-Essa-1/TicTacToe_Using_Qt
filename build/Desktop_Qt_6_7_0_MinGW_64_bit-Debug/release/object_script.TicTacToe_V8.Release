@@ -1,0 +1,16 @@
+release/AccountSettings.o
+release/AiPlayer.o
+release/DetailedGameHistory.o
+release/GameHistory.o
+release/LoginWindow.o
+release/MainMenu.o
+release/PlayMode.o
+release/SignUp.o
+release/TwoPlayer.o
+release/UpdatePassword.o
+release/UpdateUsername.o
+release/mainwindow.o
+release/tictactoetest.o
+release/qrc_resource.o
+release/moc_mainwindow.o
+release/moc_tictactoetest.o

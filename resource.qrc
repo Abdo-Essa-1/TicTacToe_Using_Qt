@@ -1,0 +1,71 @@
+<RCC>
+    <qresource prefix="/rec">
+        <file>img/GameIcon.png</file>
+        <file>img/back.jpg</file>
+        <file>img/Logo.png</file>
+        <file>img/Login/Background.png</file>
+        <file>img/Login/firstwindow.jpg</file>
+        <file>img/Login/Login.png</file>
+        <file>img/Login/password.png</file>
+        <file>img/Login/Quit.png</file>
+        <file>img/Login/Show.png</file>
+        <file>img/Login/SignUp.png</file>
+        <file>img/Login/Username.png</file>
+        <file>img/Login/welcome.png</file>
+        <file>img/pag2/final-required.png</file>
+        <file>img/pag2/Game-History.png</file>
+        <file>img/pag2/logout.png</file>
+        <file>img/pag2/Manage-Account.png</file>
+        <file>img/pag2/ourservices.png</file>
+        <file>img/pag2/play.png</file>
+        <file>img/pag2/quit.png</file>
+        <file>img/Login/white-rect.png</file>
+        <file>img/Game itsself/Back.png</file>
+        <file>img/Game itsself/Borders.png</file>
+        <file>img/Game itsself/Enjoy.png</file>
+        <file>img/Game itsself/o-vector.png</file>
+        <file>img/Game itsself/required.png</file>
+        <file>img/Game itsself/Reset.png</file>
+        <file>img/Game itsself/transparent.png</file>
+        <file>img/Game itsself/x-vector.png</file>
+        <file>img/play mode/ai.png</file>
+        <file>img/play mode/back.png</file>
+        <file>img/play mode/playmode.png</file>
+        <file>img/play mode/required.png</file>
+        <file>img/play mode/two-player.png</file>
+        <file>img/history page/detailed-history.png</file>
+        <file>img/history page/Draws.png</file>
+        <file>img/history page/history.png</file>
+        <file>img/history page/loses.png</file>
+        <file>img/history page/wins.png</file>
+        <file>img/Game replay/game-replay.png</file>
+        <file>img/Game replay/next-game.png</file>
+        <file>img/Game replay/next-move.png</file>
+        <file>img/Game replay/previous-game.png</file>
+        <file>img/Game replay/previous-move.png</file>
+        <file>img/Game replay/required.png</file>
+        <file>img/Game replay/previous.png</file>
+        <file>img/New User/confirm-pass.png</file>
+        <file>img/New User/newuserpng.png</file>
+        <file>img/New User/password.png</file>
+        <file>img/New User/required.png</file>
+        <file>img/New User/signup.png</file>
+        <file>img/New User/username.png</file>
+        <file>img/User management/delete-account.png</file>
+        <file>img/User management/required.png</file>
+        <file>img/User management/updateusername.png</file>
+        <file>img/User management/usermanegement.png</file>
+        <file>img/User management/update-password.png</file>
+        <file>img/password/new-pass(confirmation).png</file>
+        <file>img/password/new-pass.png</file>
+        <file>img/password/old-pass.png</file>
+        <file>img/password/password.png</file>
+        <file>img/password/required.png</file>
+        <file>img/password/update.png</file>
+        <file>img/username/new-username.png</file>
+        <file>img/username/password(confirmation).png</file>
+        <file>img/username/required.png</file>
+        <file>img/username/update.png</file>
+        <file>img/username/username.png</file>
+    </qresource>
+</RCC>
