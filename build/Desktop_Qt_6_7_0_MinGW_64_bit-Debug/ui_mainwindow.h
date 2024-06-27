@@ -864,7 +864,7 @@ public:
 "\n"
 "\n"
 ""));
-        UpdateUser_Text->setEchoMode(QLineEdit::Password);
+        UpdateUser_Text->setEchoMode(QLineEdit::Normal);
         UpdateUser_PassText = new QLineEdit(P8_UpdateUsername);
         UpdateUser_PassText->setObjectName("UpdateUser_PassText");
         UpdateUser_PassText->setGeometry(QRect(230, 390, 701, 40));
@@ -1259,7 +1259,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(9);
+        stackedWidget->setCurrentIndex(7);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

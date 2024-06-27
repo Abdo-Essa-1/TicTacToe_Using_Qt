@@ -113,8 +113,6 @@ private slots:
 
     void UpdateStatus();
 
-    void checkresult(int gameid);
-
     void on_DetailedHistory_clicked();
 
     void on_HistoryBack_clicked();
